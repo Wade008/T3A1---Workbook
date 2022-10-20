@@ -76,7 +76,51 @@ Quality software can be broadly defined as the extent to which the system meets 
 
 *Explain control flow, using an example from the JavaScript programming language*
 
+Control flow is the order in which code is executed by a computer. Without certain structures that can change the control flow, the computer will parse the code from the top line (left to right) to the bottom line of a script. However, the control flow of a program is frequently altered in order to achieve a desired outcome. Conditionals, loops and functions are the main structures used to change the flow of code (Mozilla.org, 2022b).
 
+*Add short para re brief description of conditionals, loop sand functions. Mention hoisting for functions*
+
+### Example - conditionals 
+
+As the name suggests, these structures alter a code's control flow based on whether a condition is met or not (Mozilla.org, 2022b). In JavaScript, conditionals include:
+- if...else statements
+- switch statements
+- Ternary operator  
+
+(Mozilla.org, 2022c)
+
+**Conditional control flow example**: Using the JavaScript example below:
+1. The script's code is read from the top, with the object added into the variable ```myDetails```. 
+2. The if ...else structure is then read, where the condition ```!myDetails.email``` is tested. That is, if there is no email value detected in the object ```myDetails``` (the condition is True), only the ``` console.log("Please enter a valid email")``` is executed and all the other code in the ```else``` section is ignored.
+3. However, if an email value is detected in the object ```myDetails``` (the condition is False) then only the ```console.log("Email added successfully")``` and code inside the ```if``` block is ignored. 
+4. Essentially, the if ...else statement alters the control flow based on the result of the condition, with the aim of indicating if an email value has been added to the ```myDetails``` object.
+
+(Mozilla.org, 2022a)  
+
+JavaScript if ...else Example:
+
+```javascript  
+
+const myDetails = {
+    name: "Wade",
+    phone: "1234567892",
+    email: null
+}
+
+if (!myDetails.email) {
+    console.log("Please enter a valid email")
+} else {
+    console.log("Email added successfully")
+}
+
+```
+### Loops
+
+
+
+
+
+### Functions
 
 
 <hr>
