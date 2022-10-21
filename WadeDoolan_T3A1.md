@@ -76,26 +76,28 @@ Quality software can be broadly defined as the extent to which the system meets 
 
 *Explain control flow, using an example from the JavaScript programming language*
 
-Control flow is the order in which code is executed by a computer. Without certain structures that can change the control flow, the computer will parse the code from the top line (left to right) to the bottom line of a script. However, the control flow of a program is frequently altered in order to achieve a desired outcome. Conditionals, loops and functions are the main structures used to change the flow of code (Mozilla.org, 2022b).
+Control flow is the order in which code is executed by a computer. Without certain structures that can change the control flow, the computer will parse the code from the top line (left to right) to the bottom line of a script. However, the control flow of a program is frequently altered in order to achieve a desired outcome. Conditionals, loops and functions are the main structures used to change the flow of code (Mozilla.org, 2022b). 
 
-*Add short para re brief description of conditionals, loop sand functions. Mention hoisting for functions*
+Moreover, in JavaScript, block statements (code inside curly brackets ```{ code goes here }```) are used with the control flow statements to encapsulate the code that is executed based on the requirements of the conditional, loop or function. In addition to conditional, loop and function structures, JavaScript also includes structures that alter the control flow based on the detection of an error. The try...catch...finally statement is used to change the order in which code is read based on the detection of an error. This type of statement is typically used in combination with conditionals and functions (Mozilla.org, 2022c).
+
+In JavaScript, function hoisting is another important concept to address when discussing control flow. When a function is declared in JavaScript, it is always read first and loaded into memory before any other code is executed. This means a function can be declared after it is called. Essentially, the control flow is altered to ensure a function is available to be called regardless of where it is declared in a script (JavaScript Tutorial, 2022).
 
 ### Example - conditionals 
 
-As the name suggests, these structures alter a code's control flow based on whether a condition is met or not (Mozilla.org, 2022b). In JavaScript, conditionals include:
+As the name suggests, these structures alter a code's control flow based on whether a condition is met or not (Mozilla.org, 2022a). In JavaScript, conditionals can include:
 - if...else statements
 - switch statements
 - Ternary operator  
 
-(Mozilla.org, 2022c)
+(Mozilla.org, 2022d)
 
-**Conditional control flow example**: Using the JavaScript example below:
+**Conditional control flow example**: Using the JavaScript example shown below:
 1. The script's code is read from the top, with the object added into the variable ```myDetails```. 
 2. The if ...else structure is then read, where the condition ```!myDetails.email``` is tested. That is, if there is no email value detected in the object ```myDetails``` (the condition is True), only the ``` console.log("Please enter a valid email")``` is executed and all the other code in the ```else``` section is ignored.
-3. However, if an email value is detected in the object ```myDetails``` (the condition is False) then only the ```console.log("Email added successfully")``` and code inside the ```if``` block is ignored. 
+3. However, if an email value is detected in the object ```myDetails``` (the condition is False) then only the ```console.log("Email added successfully")``` is run and the code inside the ```if``` block is ignored. 
 4. Essentially, the if ...else statement alters the control flow based on the result of the condition, with the aim of indicating if an email value has been added to the ```myDetails``` object.
 
-(Mozilla.org, 2022a)  
+(Mozilla.org, 2022d)  
 
 JavaScript if ...else Example:
 
@@ -113,17 +115,9 @@ if (!myDetails.email) {
     console.log("Email added successfully")
 }
 
-```
-### Loops
-
-
-
-
-
-### Functions
-
-
+``` 
 <hr>
+
 
 ## **Question 8:**  
 
