@@ -121,7 +121,58 @@ if (!myDetails.email) {
 
 ## **Question 8:**  
 
-*Explain type coercion, using examples from the JavaScript programming language* 
+*Explain type coercion, using examples from the JavaScript programming language*  
+
+Type coercion is an implied process, where the code will automatically convert a value from one data type to another under certain circumstances (Mozilla.org, 2022e). For example, in JavaScript, a number value will be coerced into a string value when attempting to add a sting and a number together (see below).
+
+**Example: General type coercion in JavaScript**
+```javascript
+
+let num1 = "5";
+let num2 = 10;
+
+let total = num1 + num2;
+
+console.log(total)
+
+// Will output 510 as a string
+
+```
+Notably, JavaScript is a weakly typed language, meaning the data type of a variable is determined when it is initialised with a value, not at declaration. Furthermore, type coercion in JavaScript occurs to the string, number and boolean primitive types. Importantly, how particular data types are coerced is dependent upon the type of operation being used (Bhalla, 2022).
+
+1. String coercion  
+
+As shown in the example above, a number is typically coerced into string when a number and string are added together. This also happens when a boolean and a string are added together (GeeksforGeeks, 2020).
+
+ **JavaScript example: coercion to string type**
+
+```javascript
+
+let num1 = false;
+let num2 = "22";
+
+let total = num1 + num2;
+
+console.log(total)
+
+// Will output false22 as a string
+
+```
+
+2. Number coercion
+
+
+
+
+
+
+
+
+
+
+
+(GeeksforGeeks, 2020)
+
 
 <hr>
 
