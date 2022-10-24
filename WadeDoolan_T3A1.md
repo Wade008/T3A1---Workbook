@@ -89,7 +89,7 @@ As the name suggests, these structures alter a code's control flow based on whet
 - switch statements
 - Ternary operator  
 
-(Mozilla.org, 2022d)
+(Mozilla.org, 2022e)
 
 **Conditional control flow example**: Using the JavaScript example shown below:
 1. The script's code is read from the top, with the object added into the variable ```myDetails```. 
@@ -97,7 +97,7 @@ As the name suggests, these structures alter a code's control flow based on whet
 3. However, if an email value is detected in the object ```myDetails``` (the condition is False) then only the ```console.log("Email added successfully")``` is run and the code inside the ```if``` block is ignored. 
 4. Essentially, the if ...else statement alters the control flow based on the result of the condition, with the aim of indicating if an email value has been added to the ```myDetails``` object.
 
-(Mozilla.org, 2022d)  
+(Mozilla.org, 2022e)  
 
 JavaScript if ...else Example:
 
@@ -123,7 +123,7 @@ if (!myDetails.email) {
 
 *Explain type coercion, using examples from the JavaScript programming language*  
 
-Type coercion is an implied process, where the code will automatically convert a value from one data type to another under certain circumstances (Mozilla.org, 2022e). For example, in JavaScript, a number value will be coerced into a string value when attempting to add a sting and a number together (see below).
+Type coercion is an implied process, where the code will automatically convert a value from one data type to another under certain circumstances (Mozilla.org, 2022f). For example, in JavaScript, a number value will be coerced into a string value when attempting to add a sting and a number together (see below).
 
 **Example: General type coercion in JavaScript**
 ```javascript
@@ -161,18 +161,63 @@ console.log(total)
 
 2. Number coercion
 
+Where possible, JavaScript will coerce a string to a number when operations like subtraction, multiplication, division and modulus are used between a number and string or two strings. If a string cannot be logically coerced into a number ```NaN``` is the result of the operation (GeeksforGeeks, 2020).
+
+**JavaScript example: coercion to number type**
+
+```javascript
+
+let num1 = 25;
+let num2 = "5";
+
+let result = num1 / num2;
+
+console.log(result)
+
+// Will output 5 as a number
+
+```
+JavaScript will also coerce Boolean values to numbers where appropriate. Since true can be represented a 1 and false as 0, it is logical for JavaScript to convert Boolean values to numeric values (GeeksforGeeks, 2020). The example below shows how this can happen.
+
+**JavaScript example: coercion to number type**
+
+```javascript
 
 
+let num1 = true;
+let num2 = false;
+let num3 = true;
+
+let result = num1 + num2 + num3;
+
+console.log(result)
 
 
+// Will output 2 as a number
+
+```
+
+3. The equality operator
+
+When the non-strict equality operator ``` ( == ) ``` is used in JavaScript, non-number values will be coerced into numbers, where appropriate  However, coercion will not occur when the strict equality operator ```( === ) ``` is used (GeeksforGeeks, 2020). The example below shows how a string "12" is coerced into a number when it is compared to the number 12 using the non-strict equality operator.
+
+**JavaScript example: equality operator**
+
+```javascript
 
 
+let num1 = 12;
+let num2 = "12";
 
 
+let result = num1 == num2
+
+console.log(result)
 
 
-(GeeksforGeeks, 2020)
+// The output will be true
 
+```
 
 <hr>
 
@@ -180,12 +225,37 @@ console.log(total)
 
 *Explain data types, using examples from the JavaScript programming language*
 
+In programming, setting/knowing the type of data a variable holds (data type) is required for a computer to be able to perform operations on variables and solve certain problems. For example, for a computer to be able to multiply values together, it must be able to discern the information being multiplied together are numbers (W3schools.com, 2015).  
+
+JavaScript is a dynamically typed language meaning the same variable can be used to hold values with different data types. The example below shows how this can happen (W3schools.com 2015; Mozilla.org 2022d).
+
+```javascript
+
+let myVar = 25; //myVar has Number data type
+myVar = "First Name"; // myVar now has a String data type
+myVar = true; // myVar now has a Boolean data type
+
+```
+
+JavaScript has seven basic data types, seven primitive and one non-primitive. A primitive data type in JavaScript is capable of holding only one single data while the non-primitive type (an Object) can hold collections of data (Programiz.com, 2022).   
+
+Show examples for three data types 2 primitive and one object. Discuss how an array is an Object etc. 
+
+
+
+(Mozilla.org, 2022d)
+
+(Programiz.com, 2022)
+
+(W3schools.com, 2015)
+
 
 <hr>  
 
 ## **Question 10:**
 
 *Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language*  
+
 
 
 <hr>
