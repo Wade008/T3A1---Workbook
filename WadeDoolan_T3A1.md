@@ -237,17 +237,35 @@ myVar = true; // myVar now has a Boolean data type
 
 ```
 
-JavaScript has seven basic data types, seven primitive and one non-primitive. A primitive data type in JavaScript is capable of holding only one single data while the non-primitive type (an Object) can hold collections of data (Programiz.com, 2022).   
+JavaScript has eight basic data types, seven primitive and one non-primitive. A primitive data type in JavaScript is capable of holding only one single data (datum) while the non-primitive type (an Object) can hold collections of data (Programiz.com, 2022). JavaScript primitive types can be tested using the ``` typeof ``` except for the null data type. Null data types must be tested using ```=== null```. This is explained in the code below.  
 
-Show examples for three data types 2 primitive and one object. Discuss how an array is an Object etc. 
+```javascript
 
+let a = 'string';
+let b = 1;
+let c;
+let d = true;
+let e = null;
 
+console.log(typeof(a)) //outputs string
+console.log(typeof(b)) //outputs number
+console.log(typeof(c)) //output undefined   
+console.log(typeof(d)) //outputs boolean
+console.log(typeof(e)) //outputs object
+console.log(e === null) //outputs true
 
-(Mozilla.org, 2022d)
+```
+### Examples of data types in JavaScript
 
-(Programiz.com, 2022)
+The following are some examples of data types in JavaScript and what they're typically used for.  
 
-(W3schools.com, 2015)
+- **Boolean type:** (primitive) A boolean type in JavaScript can hold two possibles values: true and false. This data type is typically used in situations that require a binary choice such as conditionals, for example, if...else or ternary operators.
+
+- **Number type:** (primitive) A number type in JavaScript is able to hold integers and floating-point number values; however, there is a limit on the size of the number that can be stored. For example, JavaScript can hold a floating point number as a number type between $ \pm (2^{-1074} \text{ to } 2^{1024})$. And if a value is larger/smaller than the capacity it is converted to a default value. For example, if a positive value gets any larger than the size limit it is automatically converted to infinity. A number type is usually used for mathematical or counting operations. For example, a number type variable is used to count the number of iterations a for loop is required to perform. For example, ``` for(let i = 0; i < arr.length; i++) {Do something here...} ```, with i in this example a number data type used to count the number of iterations.
+
+- **String type:** (primitive) A string type in JavaScript is used to hold text, with strings declared as words wrapped in inverted commas or back ticks (for string interpolation). For example, ``` let a = "string" ``` is the same as ``` let a = 'string' ```, which is the same as ``` let a = `string` ``` in that they all declare the variable ```a``` as a string data type. Importantly, each character in a string has an index position, allowing easy access to individual characters within string. For example, ``` let a = "string" console.log(a[0])``` will output the letter at index 0, in this case "s". 
+
+(Mozilla.org 2022d; Programiz.com 2022)
 
 
 <hr>  
