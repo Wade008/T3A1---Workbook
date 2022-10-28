@@ -319,7 +319,7 @@ console.log(names)
 
 ```
 
-However, JavaScript arrays also have an extensive list of methods that make array manipoulation even easier. There are many array methods available in JavaScript and it is outside the scope of this question to explain all of them. However, some of the more common array methods include ```join()```, ```push()```, ```pop()```, ```shift()```, ```unshift()```, ```map()``` and ```reduce()``` (Bolaji Ayodeji, 2019).
+However, JavaScript arrays also have an extensive list of methods that make array manipoulation even easier. There are many array methods available in JavaScript and it is outside the scope of this question to explore all of them. However, some of the more common array methods include ```join()```, ```push()```, ```pop()```, ```shift()```, ```unshift()```, ```map()``` and ```reduce()``` (Bolaji Ayodeji, 2019).
 
 
 
