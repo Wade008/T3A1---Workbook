@@ -101,7 +101,7 @@ As the name suggests, these structures alter a code's control flow based on whet
 
 JavaScript if ...else Example:
 
-```javascript  
+```js
 
 const myDetails = {
     name: "Wade",
@@ -126,7 +126,7 @@ if (!myDetails.email) {
 Type coercion is an implied process, where the code will automatically convert a value from one data type to another under certain circumstances (Mozilla.org, 2022f). For example, in JavaScript, a number value will be coerced into a string value when attempting to add a sting and a number together (see below).
 
 **Example: General type coercion in JavaScript**
-```javascript
+```js
 
 let num1 = "5";
 let num2 = 10;
@@ -146,7 +146,7 @@ As shown in the example above, a number is typically coerced into string when a 
 
  **JavaScript example: coercion to string type**
 
-```javascript
+```js
 
 let num1 = false;
 let num2 = "22";
@@ -165,7 +165,7 @@ Where possible, JavaScript will coerce a string to a number when operations like
 
 **JavaScript example: coercion to number type**
 
-```javascript
+```js  
 
 let num1 = 25;
 let num2 = "5";
@@ -181,7 +181,7 @@ JavaScript will also coerce Boolean values to numbers where appropriate. Since t
 
 **JavaScript example: coercion to number type**
 
-```javascript
+```js
 
 
 let num1 = true;
@@ -203,7 +203,7 @@ When the non-strict equality operator ``` ( == ) ``` is used in JavaScript, non-
 
 **JavaScript example: equality operator**
 
-```javascript
+```js
 
 
 let num1 = 12;
@@ -225,11 +225,11 @@ console.log(result)
 
 *Explain data types, using examples from the JavaScript programming language*
 
-In programming, setting/knowing the type of data a variable holds (data type) is required for a computer to be able to perform operations on variables and solve certain problems. For example, for a computer to be able to multiply values together, it must be able to discern the information being multiplied together are numbers (W3schools.com, 2015).  
+In programming, setting/knowing the type of data a variable holds (data type) is required for a computer to be able to perform operations on variables and solve certain problems. For example, for a computer to be able to multiply values together, it must be able to discern the information being multiplied together are numbers (W3schools.com, 2015b).  
 
-JavaScript is a dynamically typed language meaning the same variable can be used to hold values with different data types. The example below shows how this can happen (W3schools.com 2015; Mozilla.org 2022d).
+JavaScript is a dynamically typed language meaning the same variable can be used to hold values with different data types. The example below shows how this can happen (W3schools.com 2015b; Mozilla.org 2022d).
 
-```javascript
+```js
 
 let myVar = 25; //myVar has Number data type
 myVar = "First Name"; // myVar now has a String data type
@@ -239,7 +239,7 @@ myVar = true; // myVar now has a Boolean data type
 
 JavaScript has eight basic data types, seven primitive and one non-primitive. A primitive data type in JavaScript is capable of holding only one single data (datum) while the non-primitive type (an Object) can hold collections of data (Programiz.com, 2022). JavaScript primitive types can be tested using the ``` typeof ``` except for the null data type. Null data types must be tested using ```=== null```. This is explained in the code below.  
 
-```javascript
+```js
 
 let a = 'string';
 let b = 1;
@@ -274,7 +274,67 @@ The following are some examples of data types in JavaScript and what they're typ
 
 *Explain how arrays can be manipulated in JavaScript, using examples from the JavaScript programming language*  
 
+In JavaScript, arrays are a special type of Oject that can hold a collection of values, which can be saved under a single name (W3schools.com, 2015a). For example, 
+```js 
+const names = ["Tom", "Andrew", "Jenny", "Peter"]
+``` 
+In terms of simple array manipulation, array elements are indexed starting at zero, which allows elements to be accessed, added or changed easily using square bracke notation (W3schools.com, 2015a). The example below shows how an array can be easily manipulated using index values:
 
+```js  
+const names = ["Tom", "Andrew", "Jenny", "Peter"]
+
+//accessing an element at index[0]
+console.log(names[1]) //outputs "Andrew"
+
+//adding an element at index[4]
+names[4]= "Alicia"
+console.log(names) //outputs [ 'Tom', 'Andrew', 'Jenny', 'Peter', 'Alicia' ]
+
+// changing an element value at index[0]
+names[0] = "Rebecca"
+console.log(names) //outputs [ 'Rebecca', 'Andrew', 'Jenny', 'Peter', 'Alicia' ]
+
+```
+Like most Objects in JavaScript, arrays come with properties and methods that can be used to manipulate arrays. In relation to array properties, the ```arr.length``` property can be used in structures like ```for ``` loops to iteratively access and manipulate an arrays elements (W3schools.com, 2015a).
+ 
+```js
+
+const names = ["Tom", "Andrew", "Jenny", "Peter"]
+
+//using the length property to manipulate an array
+for(let i = 0; i < names.length; i++) { 
+
+    // add 'Hello my name is: ' to the front of each element
+    names[i] = `Hello my name is: ${names[i]}`
+}
+
+console.log(names)
+
+// outputs: [
+//   'Hello my name is: Tom',
+//   'Hello my name is: Andrew',
+//   'Hello my name is: Jenny',
+//   'Hello my name is: Peter'
+// ]
+
+```
+
+However, JavaScript arrays also have an extensive list of methods that make array manipoulation even easier. There are many array methods available in JavaScript and it is outside the scope of this question to explain all of them. However, some of the more common array methods include ```join()```, ```push()```, ```pop()```, ```shift()```, ```unshift()```, ```map()``` and ```reduce()``` (Bolaji Ayodeji, 2019).
+
+
+
+
+
+
+
+
+
+
+
+
+(W3schools.com, 2015a)
+
+(Bolaji Ayodeji, 2019)
 
 <hr>
 
