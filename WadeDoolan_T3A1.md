@@ -319,22 +319,90 @@ console.log(names)
 
 ```
 
-However, JavaScript arrays also have an extensive list of methods that make array manipoulation even easier. There are many array methods available in JavaScript and it is outside the scope of this question to explore all of them. However, some of the more common array methods include ```join()```, ```push()```, ```pop()```, ```shift()```, ```unshift()```, ```map()``` and ```reduce()``` (Bolaji Ayodeji, 2019).
+However, JavaScript arrays also have an extensive list of methods that make array manipulation even easier. There are many array methods available in JavaScript, and it is outside the scope of this question to explore all of them. However, some of the more common array methods include ```join()```, ```push()```, ```pop()```, ```shift()```, ```unshift()```, ```map()``` and ```reduce()``` (Bolaji Ayodeji, 2019). An examples of each of these methods is shown below:
+
+```js
+
+const names = ["Tom", "Andrew", "Jenny", "Peter"]
+
+// join()
+
+// Join all the elements of an array into a single string based on a delimiter.
+let allNames = names.join(" ")
+console.log(allNames)
+// outputs "Tom Andrew Jenny Peter" as a single string
 
 
+// push()
+
+// Push one or more elements onto the back of an array
+names.push("Alex", "John")
+console.log(names)
+// outputs the names array with the names "Alex" and "John" added to the end of the array:
+// [ 'Tom', 'Andrew', 'Jenny', 'Peter', 'Alex', 'John' ]
 
 
+// pop()
+
+// remove the last element from the back of an array
+names.pop()
+console.log(names)
+// outputs the names array with "John" removed form the end of the array:
+// [ 'Tom', 'Andrew', 'Jenny', 'Peter', 'Alex' ]
 
 
+// shift()
+
+// Remove the first element from the front of an array
+names.shift()
+console.log(names)
+// outputs the names array with the first name removed from the array:
+// [ 'Andrew', 'Jenny', 'Peter', 'Alex' ]
 
 
+// unshift()
+
+// Adds a new alement to the fron of an array
+names.unshift("Tom")
+console.log(names)
+// outputs the names array with the name "Andrew" inserted at the front of the array.
+//  [ 'Tom', 'Andrew', 'Jenny', 'Peter', 'Alex' ]
 
 
+// map()
+
+// builds a new array by manipulating the elements of another array.
+
+let i = 1
+const newNames = names.map(name => {
+
+    let newName = `${name}_${i}`
+    i++;
+    return newName
+})
+
+console.log(newNames)
+// outputs a new array (newNames), with each element including their position suffix.
+// [ 'Tom_1', 'Andrew_2', 'Jenny_3', 'Peter_4', 'Alex_5' ]
 
 
-(W3schools.com, 2015a)
+// reduce()
 
-(Bolaji Ayodeji, 2019)
+// The reduce method can be used to calculate a single value from an array (e.g. a total value) from the elements in a numeric array 
+
+salesData = [20, 40, 100, 300, 27, 86, 90, 578]
+
+let totalSales = salesData.reduce((accumulatedValue, currentValue) => {
+    return accumulatedValue + currentValue
+}, 0)
+
+console.log(totalSales)
+
+// outputs 1241 
+
+```
+(Bolaji Ayodeji 2019; W3schools.com 2015a)
+
 
 <hr>
 
@@ -343,6 +411,11 @@ However, JavaScript arrays also have an extensive list of methods that make arra
 *Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language* 
 
 
+
+
+
+
+(W3schools.com, 2015c)
 
 <hr>
 
