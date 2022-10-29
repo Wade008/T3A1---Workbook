@@ -410,13 +410,69 @@ console.log(totalSales)
 
 *Explain how objects can be manipulated in JavaScript, using examples from the JavaScript programming language* 
 
+In JavaScript, Objects are variables that contain a collection of values, with each value written as key:value pair. Notably, these key:value pairs are known as properties (W3schools.com, 2015c).
+
+Objects can be declared in two ways by either 'object literal' syntax or using 'object constructor' syntax (Md. Abu Talha, 2018). Examples of both approaches are show below:
+
+```js
+//Object literal
+const employee = {};
+
+employee["firstname"] = "Tom";
+employee["lastename"] = "Anderson";
+employee["email"] = "t@2.com";
+employee["phone"] = "0451236987";
+
+
+console.log(employee)
+// outputs {
+//     firstname: 'Tom',
+//     lastename: 'Anderson',
+//     email: 't@2.com',
+//     phone: '0451236987'
+//   }
+
+// ------------------------------------------------
+
+// Object constructor
+
+const employee = new Object();
+
+
+employee.firstname = "Tom";
+employee.lastename = "Anderson";
+employee.email = "t@2.com";
+employee.phone = "0451236987";
+
+
+console.log(employee)
+// outputs {
+//     firstname: 'Tom',
+//     lastename: 'Anderson',
+//     email: 't@2.com',
+//     phone: '0451236987'
+//   }
+
+```
+
+Discuss the following:
+- accessing properties
+- changing a value
+- deleting properties
+- merge two objects
+- methods
+
+
+
+
 
 
 
 
 
 (W3schools.com, 2015c)
-
+(W3schools.com, 2022)
+(Md. Abu Talha, 2018)
 <hr>
 
 ## **Question 12:**
