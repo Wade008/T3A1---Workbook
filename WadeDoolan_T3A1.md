@@ -480,9 +480,11 @@ console.log(employee1)
 //   }
   
 ```
+
+(Md. Abu Talha, 2018)
 ### Accessing, updating and deleting object properties
 
-The properties within a JavaScript object can be accessed, altered or deleted using either bracket ```object[keyname]``` or dot ```object.keyname``` notation. The examples below show how object properties can be access, changed and deleted using both methods.
+The properties within a JavaScript object can be accessed, altered or deleted using either bracket ```object[keyname]``` or dot ```object.keyname``` notation. The examples below show how object properties can be access, changed and deleted using both methods (Md. Abu Talha 2018; W3schools.com 2015c; W3schools.com 2022).
 
 ```js
 
@@ -516,28 +518,113 @@ console.log(employee1)
 // }
 
 ```
+(Md. Abu Talha 2018; W3schools.com 2015c; W3schools.com 2022)
 
 ### Merging objects
 
+JavaScript objects can be merged by either using the spread operator ``` ...object``` or the ```object.assign()``` method (Md. Abu Talha, 2018). See examples below.
 
+```js
+
+// Merging two objects using the spread operator
+
+const vehicle1 = {
+    make: "Audi",
+    model: "A4",
+    body: "Sedan"
+}
+
+const vehicleColour = {
+    colour:"Black"
+}
+
+const vehicleMerged = {
+    ...vehicle1,
+    ...vehicleColour
+}
+
+console.log(vehicleMerged)
+// outputs { make: 'Audi', model: 'A4', body: 'Sedan', colour: 'Black' }
+
+
+// Merging two objects using the Object.assign() method
+
+const vehicle1 = {
+    make: "Audi",
+    model: "A4",
+    body: "Sedan"
+}
+
+const vehicleColour = {
+    colour:"Black"
+}
+
+const vehicleMerged = Object.assign(vehicle1, vehicleColour)
+console.log(vehicleMerged)
+// outputs { make: 'Audi', model: 'A4', body: 'Sedan', colour: 'Black' }
+
+```
+(Md. Abu Talha, 2018)
 
 ### Object keys, values and entries
 
+JavaScript objects can also be manipulated by accessing their keys, values or entries (keys and values) and converting them into arrays. This is done using the ```Object.keys()```, ```Object.values()```, or the ```Object.entries()``` methods. The examples below show how these methods can be used (Md. Abu Talha, 2018).
 
+```js
+
+const vehicle1 = {
+    make: "Audi",
+    model: "A4",
+    body: "Sedan",
+    colour: "Black"
+}
+
+// Accessing an object's keys
+
+const vehicle1Keys = Object.keys(vehicle1)
+console.log(vehicle1Keys)
+// outputs [ 'make', 'model', 'body', 'colour' ]
+
+
+// Accessing an object's values
+
+const vehicle1Value = Object.values(vehicle1)
+console.log(vehicle1Value)
+// outputs [ 'Audi', 'A4', 'Sedan', 'Black' ]
+
+// Accessing an object's entries - producing a 2 dimensional array
+
+const vehicle1Entries = Object.entries(vehicle1)
+console.log(vehicle1Entries)
+// outputs [[ 'make', 'Audi' ],[ 'model', 'A4' ],[ 'body', 'Sedan' ],[ 'colour', 'Black' ]]
+
+```
+(Md. Abu Talha, 2018).  
 
 ### Adding object methods
 
+JavaScript also allow bespoke methods to be added to objects. See the example below (W3schools.com, 2015c).
+
+```js
 
 
 
+const customer1 = {
+    firstname: "Kelly",
+    lastname: "Clarkson",
+    email: "k@C.com",
+    phone: "1234567891",
+    hello: function() {
+        return `Hi, my name is ${this.firstname} ${this.lastname}`
+    }
+}
 
+console.log(customer1.hello())
+// outputs "Hi, my name is Kelly Clarkson"
 
-
-
-
+```
 (W3schools.com, 2015c)
-(W3schools.com, 2022)
-(Md. Abu Talha, 2018)
+
 <hr>
 
 ## **Question 12:**
