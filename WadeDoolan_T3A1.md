@@ -412,7 +412,9 @@ console.log(totalSales)
 
 In JavaScript, Objects are variables that contain a collection of values, with each value written as key:value pair. Notably, these key:value pairs are known as properties (W3schools.com, 2015c).
 
-Objects can be declared in two ways by either 'object literal' syntax or using 'object constructor' syntax (Md. Abu Talha, 2018). Examples of both approaches are show below:
+###  Creating objects
+
+Objects can be declared in several ways by either 'object literal' syntax or using 'object constructor' syntax (Md. Abu Talha, 2018). Examples of several approaches are show below:
 
 ```js
 //Object literal
@@ -453,14 +455,77 @@ console.log(employee)
 //     phone: '0451236987'
 //   }
 
+// ------------------------------------------------
+
+
+// Constructor function
+
+function Employee(firstname, lastname, email, phone) {
+    this.firstname = firstname
+    this.lastname = lastname
+    this.email = email
+    this.phone = phone
+}
+
+let employee1 = new Employee("Tom", "Anderson", "t@2.com", "0451236987")
+
+console.log(employee1)
+
+// outputs 
+// Employee {
+//     firstname: 'Tom',
+//     lastname: 'Anderson',
+//     email: 't@2.com',
+//     phone: '0451236987'
+//   }
+  
+```
+### Accessing, updating and deleting object properties
+
+The properties within a JavaScript object can be accessed, altered or deleted using either bracket ```object[keyname]``` or dot ```object.keyname``` notation. The examples below show how object properties can be access, changed and deleted using both methods.
+
+```js
+
+// Using the employee1 object from the above example
+
+// Accessing an object property value 
+
+console.log(`${employee1.firstname}'s phone number is ${employee1.phone}`)
+
+// outputs Tom's phone number is 0451236987
+
+
+// Changing an object property value
+
+employee1["email"] = "tom@3.com";
+
+console.log(`${employee1["firstname"]}'s new email address is ${employee1["email"]}`)
+
+// outputs Tom's new email address is tom@3.com
+
+// Deleting an object property
+
+delete employee1.email
+
+console.log(employee1)
+
+// outputs Employee {
+//   firstname: 'Tom',
+//   lastname: 'Anderson',
+//   phone: '0451236987'
+// }
+
 ```
 
-Discuss the following:
-- accessing properties
-- changing a value
-- deleting properties
-- merge two objects
-- methods
+### Merging objects
+
+
+
+### Object keys, values and entries
+
+
+
+### Adding object methods
 
 
 
