@@ -631,6 +631,33 @@ console.log(customer1.hello())
 
 *Explain how JSON can be manipulated in JavaScript, using examples from the JavaScript programming language*  
 
+JSON (JavaScript Object Notation) is a popular way to format data. A JSON object is similar to an object literal in JavaScript, with data structured in key value pairs wrapped in curly brackets. However, there are a number of key differences between JSON and JavaScript objects. Firstly, JSON is essentially just a string or text written in a form that resembles a JavaScript object. Also, JSON keys must always be wrapped in double quotation marks, ```"firstname"```. Whereas, object literals in JavaScript do not require the keys to be wrapped in quotation marks unless a key is hyphenated ``` 'first-name' ``` (Koishigawa, 2021). The example below shows the difference between JSON and a JavaScript object:
+
+**JSON**
+
+```json 
+{
+    "name": "Wade",
+    "phone": "1234567891",
+    "email": "wade@example.com" 
+}
+```
+**JavaScript object**
+
+```js
+{
+    name: "Wade",
+    phone: "1234567891",
+    email: "wade@example.com" 
+}
+
+```
+(Koishigawa, 2021)
+
+
+
+
+
 
 
 
