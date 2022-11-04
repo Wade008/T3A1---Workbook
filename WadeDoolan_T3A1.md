@@ -654,6 +654,7 @@ JSON (JavaScript Object Notation) is a popular way to format data. A JSON object
 ```
 (Koishigawa, 2021)
 
+Therefore, to be able to manipulate JSON in JavaScript the JSON information must first be parsed/changed into something that JavaScript can understand.  
 
 
 
