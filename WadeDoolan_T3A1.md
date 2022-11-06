@@ -21,11 +21,9 @@
 Quality software can be broadly defined as the extent to which the system meets the needs of the end users. Furthermore, these needs are listed in ISO/IEC 25010 and include the attributes shown below (Iso25000.com, 2022).
 
 
-
 ![quality software attributes](https://iso25000.com/images/figures/en/iso25010.png)
 
 (Iso25000.com, 2022)
-
 
 
 1. Functional suitability: is an important quality characteristic that represents how well a software product meets the explicit and implicit needs of its users. This quality characteristic has three sub-attributes:
@@ -35,6 +33,8 @@ Quality software can be broadly defined as the extent to which the system meets 
 
 (Iso25000.com 2022; Super User 2022)
 
+Example: 
+
 2. Performance efficiency: relates to the performance of the system relative to the size of the resources used under certain conditions. The quality characteristic it comprised of a number sub-attributes:
     - *Time behaviour* is essentially the time it takes for the system to execute its functions. Faster processing time is typically more desirable.
     - *Use of resources* relates to the amount of resources used by the software product when performing tasks. Minimal use of resources like memory and storage to achieve desired outcomes is desirable.  
@@ -42,13 +42,32 @@ Quality software can be broadly defined as the extent to which the system meets 
     
 (Iso25000.com 2022; Kaur, Grover and Dixit 2018)
 
+Example: 
+
 3. Compatibility: generally refers to how well a product works with other related products when sharing the same hardware or software environments. This includes two sub-attributes, co-existence and interoperability. Co-existence pertains to how well a product performs while not negatively affecting the other product. Interoperability involves how well two or more products exchange and use the shared information. An example of compatibility is how well a web app works across different browsers and operating systems (Iso25000.com 2022; Software Testing Help 2022)
+
+Example: 
 
 4. Usability: is the extent to which a product can be used by the target audience. This particular quality requirement comprises several key characteristics including a users ability to recognise how appropriate the product is for them, how easy it is to learn to use the product, how easy it is to operate the product, if the product protects the user from making errors, how intuitive the interface is and accessibility for all users. Usability testing typically involves a small set of end-users (Iso25000.com 2022; Guru99 2020).
 
-5. Reliability: involves determining how well a product performs its functions under certain conditions for set period of time. This quality involves assessing how reliable a product is under normal conditions, how available the product is when it is when required for use, if the product can still function when a software or hardware fault occurs and if the product can be recovered successfully after system failure(Iso25000.com, 2022). 
+Example: 
 
-6. 
+5. Reliability: involves determining how well a product performs its functions under certain conditions for set period of time. This quality involves assessing how reliable a product is under normal conditions, how available the product is when it is when required for use, if the product can still function when a software or hardware fault occurs and if the product can be recovered successfully after system failure (Iso25000.com, 2022). 
+
+Example: 
+
+6. Security: is perhaps one of the most important quality characteristics of a product. It refers to the extent to which a product ensures appropriate authorised access, code integrity, logging, entity identification and user authentication (Iso25000.com, 2022).  
+
+Example: 
+
+7. Maintainability: relates to the continuous improvement and adaptability of a product. This quality has several sub-characteristics including the extent of modularity that allows component change without drastically impacting other components, reusability of product components across multiple systems, the ability to analyse the effects of change on a product, how easily a product can be modified with causing defects and how easily a product can be tested to ensure it is fit for purpose (Iso25000.com, 2022).     
+
+8. Portability: is the extent to which a product can be transferred from one hardware or software environment to another. This quality comprises: 
+    - adaptability or the extent to which a product can adapt to changing hardware and software environments like changes to operating systems or browsers.  
+    - How easy it is to install/remove a product from certain environment, such as a Windows operating system.
+    - The degree to which can replace another product in the same environment and still perform the same tasks.
+
+
 
 <hr>
 
