@@ -8,6 +8,51 @@
 
 *Provide an overview and description of a standard source control process for a large project*  
 
+There are several hosted source control systems available for developers to use; however, this question will be answered using the Git and GitHub source control system as an example. 
+
+### GitHub setup
+
+It's likely a standard source control process for a large project will require a GitHub repository (repo) where all the project code will be housed remotely. This central GitHub repo could be set up within a senior developer's personal GitHub account, but it will probably involve the main repo being set up by the project lead within a company GitHub account (Demasi, 2022).
+
+All developers involved in the project will have their own GitHub accounts. They will be sent an invitation to become a collaborator on the project by the project lead. Once each developer has accepted the invitation they become collaborators on the project repo (Demasi, 2022). An example of the GitHub invitation to collaborate on the project repo is show below:
+
+![GitHub repo invite](https://docs.github.com/assets/cb-11292/images/help/repository/add-collaborator-user-repo.png)
+
+(GitHub Docs, 2022a)
+
+### Creating project files
+
+The project lead could initially create the starting files (HTML, JavaScript etc.) that will ultimately be worked on by other developers in the main branch of the project GitHub repo (Demasi, 2022). An example of this is shown below:
+
+![Create a file in GitHub](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2gdlz27zm8k8cpziv7be.png)
+
+(Demasi, 2022)
+
+### Creating issues
+
+When the project lead is ready to start allocating tasks to the other developers they can create issues in the GitHub repo. Issues can be read by all developers and allow each developer to read the requirements of the open issues and respond accordingly. Issues make it easy for all team members to know who is working on a particular task. Notably, issues can be used to deal with any aspect of the project, but they are very useful for outlining individual feature requirements for the project (Demasi, 2022).
+
+### Local environments and feature development
+
+
+
+
+
+
+Local environments (requires Git) for all developers. All developers Clone the main repo to their local environments
+(Demasi, 2022)
+
+### General GitHub/Git workflow
+
+
+
+
+(GitHub Docs, 2022a)
+
+
+
+
+(Atlassian, 2022b)
 
 
 
