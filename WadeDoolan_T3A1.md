@@ -34,15 +34,15 @@ When the project lead is ready to start allocating tasks to the other developers
 
 ### Local environments and feature development
 
-
-
-
-
-
-Local environments (requires Git) for all developers. All developers Clone the main repo to their local environments
-(Demasi, 2022)
+All developers will work on their respective issues/features locally. As such, they will require Git to be installed on their local machines. They will set up their local development environments by creating their main project directory and cloning down the project repo from GitHub. For example, ``` git clone git@github.com:<project repo>/<project name>.git  ```. Now the remote repo has been copied down to each developers' local environment (Demasi, 2022).
 
 ### General GitHub/Git workflow
+
+In their local environments, each developer must ensure their copy of the main project code is up-to-date before starting on each new feature/issue. While on the main branch, they can do this using a ```git pull``` or other commands like ```git fetch origin``` and ```get reset --hard origin/main```.  
+
+When starting work on a new feature or issue each developer could follow the source control follow recommended by GitHub (GitHub Docs, 2022a). These steps are outlined below:
+
+1. 
 
 
 
