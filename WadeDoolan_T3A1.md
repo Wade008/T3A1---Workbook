@@ -120,14 +120,17 @@ Example:
 
 ### The front end - React.js
 
+list the main parts of react
 
+(Reactjs.org, 2021)
 
-### The server layer - Express.js and Node.js 
+### The back end server layer - Express.js and Node.js 
 
-
+describe these things and include mongoose
 
 ### The database layer - MongoDB
 
+describe
 
 
 ![MERN architecture](https://webimages.mongodb.com/_com_assets/cms/mern-stack-b9q1kbudz0.png?auto=format%2Ccompress)
