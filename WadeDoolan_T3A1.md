@@ -118,6 +118,27 @@ Example:
 
 *Outline a standard high level structure for a MERN stack application and explain the components*
 
+### The front end - React.js
+
+
+
+### The server layer - Express.js and Node.js 
+
+
+
+### The database layer - MongoDB
+
+
+
+![MERN architecture](https://webimages.mongodb.com/_com_assets/cms/mern-stack-b9q1kbudz0.png?auto=format%2Ccompress)
+
+
+
+
+
+(MongoDB, 2022)
+
+
 <hr>
 
 ## **Question 4:**  
