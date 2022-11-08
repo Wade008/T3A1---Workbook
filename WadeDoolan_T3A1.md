@@ -38,24 +38,22 @@ All developers will work on their respective issues/features locally. As such, t
 
 ### General GitHub/Git workflow
 
-In their local environments, each developer must ensure their copy of the main project code is up-to-date before starting on each new feature/issue. While on the main branch, they can do this using a ```git pull``` or other commands like ```git fetch origin``` and ```get reset --hard origin/main```.  
+In their local environments, each developer must ensure their copy of the main project code is up-to-date before starting on each new feature/issue. While on the main branch, they can do this using a ```git pull``` or other commands like ```git fetch origin``` and ```get reset --hard origin/main``` (Atlassian, 2022a).  
 
-When starting work on a new feature or issue each developer could follow the source control follow recommended by GitHub (GitHub Docs, 2022a). These steps are outlined below:
+Once their local environment is up-to-date, each developer could follow the source control follow recommended by GitHub when starting on new feature/issue (GitHub Docs, 2022a). These steps are outlined below:
 
-1. 
+1. Create a new branch and name the branch appropriately, so it's easy to identify the feature or issue being developed. For example, ```git checkout -b new-menu-feature```. 
+2. Each developer works on the feature code on their local feature branch, ensuring they commit regularly. For this they can use the following commands: ```git add .```, ```git commit -m "message"```. The feature branch should be pushed to the remote repository on a regular basis, allowing the project lead and other developers to track the progress of the feature/issue branch. All local updates can be pushed to the remote repo using, ```git push -u origin new-menu-feature```.
+3. The project lead and other developers might review the commits that have been pushed up to the remote repo feature branch. Changes can then be made locally in response to the ongoing feedback and then pushed back up to the feature branch in GitHub   
+4. When a developer has finished working on the feature or issue they commit locally and push to the remote branch. At this point they submit a pull request to merge the new branch onto the main branch. This triggers a review by other developers, including the project lead to review the code before it is merged into the main branch. 
+5. A developer then need to address all the feedback provided from the review. When this has been done and the merge request is accepted, the developer will merge the feature or issue branch onto the main branch. This typically involves moving to the main branch, updating the local main branch inline with the remote and then merging the feature/issue branch onto the main branch. The following commands can be used to achieve this.   
+    - Move to the main branch:```git checkout main```    
+    - update the local version of main inline with the central version: ``` git pull```
+    - merge the local feature branch onto local main: ```git pull origin new-menu-feature```
+    - pushing all updates back to the central repository: ```git push```  
+6. It is recommended by GitHub to delete the feature/issue branch after it has been successfully merged onto the main branch. This is to ensure other developers don't accidentally start using an old branch. Notably, the pull request and commit history for the branch will not be deleted. 
 
-
-
-
-(GitHub Docs, 2022a)
-
-
-
-
-(Atlassian, 2022b)
-
-
-
+(Atlassian 2022a; GitHub Docs 2022a)
 
 <hr>
 
