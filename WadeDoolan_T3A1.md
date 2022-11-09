@@ -118,13 +118,17 @@ Example:
 
 *Outline a standard high level structure for a MERN stack application and explain the components*
 
+A MERN stack application is any application built using MongoDb, Express.js, React.js and Node.js. A MERN application comprises three layer or tiers, the front end, back end and a database. The architecture or a MERN application is explained in more detail below (MongoDB, 2022).
+
 ### The front end - React.js
 
-list the main parts of react
+React.js is a front end framework built using JavaScript and represents the top tier of the application. React allows developers to build a front end interface with reusable components, making development fast and efficient. Moreover, React creates a virtual Document Object Model (DOM) in memory and will only update the parts of a webpage that need to be updates and will leave the parts that don't need to be changed. This is in contrast to refreshing an entire page when something changes. With React, you can build complex interfaces using multiple components, connect to data on the back end and render the relevant information in HTML. 
 
-(Reactjs.org, 2021)
+(Reactjs.org 2021a; Reactjs.org 2021b; W3schools.com 2022b)
 
 ### The back end server layer - Express.js and Node.js 
+
+Express.js is a server-side framework that works on top of a Node.js server. Express.js allows developers easily write routes that can handle incoming HTTP requests and response accordingly. 
 
 describe these things and include mongoose
 
@@ -579,7 +583,7 @@ console.log(employee1)
 (Md. Abu Talha, 2018)
 ### Accessing, updating and deleting object properties
 
-The properties within a JavaScript object can be accessed, altered or deleted using either bracket ```object[keyname]``` or dot ```object.keyname``` notation. The examples below show how object properties can be access, changed and deleted using both methods (Md. Abu Talha 2018; W3schools.com 2015c; W3schools.com 2022).
+The properties within a JavaScript object can be accessed, altered or deleted using either bracket ```object[keyname]``` or dot ```object.keyname``` notation. The examples below show how object properties can be access, changed and deleted using both methods (Md. Abu Talha 2018; W3schools.com 2015c; W3schools.com 2022a).
 
 ```js
 
@@ -613,7 +617,7 @@ console.log(employee1)
 // }
 
 ```
-(Md. Abu Talha 2018; W3schools.com 2015c; W3schools.com 2022)
+(Md. Abu Talha 2018; W3schools.com 2015c; W3schools.com 2022a)
 
 ### Merging objects
 
