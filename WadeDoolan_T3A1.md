@@ -138,30 +138,42 @@ Express.js is a server-side framework that works on top of a Node.js server. Exp
 
 MongoDB is a NoSQL database that stores data in a JSON document structure, which closely resemble JavaScript objects. JSON document/JavaScript object data created in the React front end can be sent to the Express.js/Node.js backend where it's processed and inserted into the MongoDB database. Likewise, JSON data can be queried and rendered and then rendered on the React front end (MongoDB, 2022).       
 
-
-
 <hr>
 
 ## **Question 4:**  
 
 *A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?*
 
-The project team members would require a combination of technical (hard) skills and interpersonal (soft) skills. These are discussed in more detail below:
+The project team members would require a combination of technical or hard skills and soft skills. These are discussed in more detail below:
 
 ### Technical skills
 
-- Front end technologies including HTML5, CSS, JavaScript and additional libraries like React.js, JQuery and SASS. 
+Technical skills and knowledge:  
+
+- Front end technologies including HTML5, CSS, JavaScript and additional libraries like React.js, JQuery and CSS preprocessors. 
 - Knowledge of at least one server side language like Python, Ruby or JavaScript (if using Node.js).
 - Knowledge and skills relating several of database management systems like MongoDB or PostgreSQL. The ability to query data is also a must. For example using SQL.
-- Design skills  
+- Design skills relating to user interface / user experience (UI/UX) is essential.
+- Some knowledge around severs such as Apache and Linus to handle server administration is helpful.
+- Version control skills relating to Git and GitHub (or similar) is very important.
+- Knowledge and skills relating to web services and RESTful API creation and consumption.
+- It's also import to have some understanding of security, software testing, algorithms and data structures.  
 
+(Guru99, 2020a) 
 
+### Soft skills
 
+Some important soft skills include: 
 
+- Creativity
+- Communication skills including active listening and one-on-one communication.
+- Adaptability 
+- Problem-solving is a must 
+- Patients
+- Good time management
+- Collaboration with other developers
 
-
-
-(Guru99, 2020a)
+(Indeed Career Guide, 2022)
 
 <hr>
 
