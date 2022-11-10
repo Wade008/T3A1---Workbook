@@ -91,7 +91,7 @@ Example:
 
 Example: 
 
-4. Usability: is the extent to which a product can be used by the target audience. This particular quality requirement comprises several key characteristics including a users ability to recognise how appropriate the product is for them, how easy it is to learn to use the product, how easy it is to operate the product, if the product protects the user from making errors, how intuitive the interface is and accessibility for all users. Usability testing typically involves a small set of end-users (Iso25000.com 2022; Guru99 2020).
+4. Usability: is the extent to which a product can be used by the target audience. This particular quality requirement comprises several key characteristics including a users ability to recognise how appropriate the product is for them, how easy it is to learn to use the product, how easy it is to operate the product, if the product protects the user from making errors, how intuitive the interface is and accessibility for all users. Usability testing typically involves a small set of end-users (Iso25000.com 2022; Guru99 2020b).
 
 Example: 
 
@@ -118,32 +118,26 @@ Example:
 
 *Outline a standard high level structure for a MERN stack application and explain the components*
 
-A MERN stack application is any application built using MongoDb, Express.js, React.js and Node.js. A MERN application comprises three layer or tiers, the front end, back end and a database. The architecture or a MERN application is explained in more detail below (MongoDB, 2022).
-
-### The front end - React.js
-
-React.js is a front end framework built using JavaScript and represents the top tier of the application. React allows developers to build a front end interface with reusable components, making development fast and efficient. Moreover, React creates a virtual Document Object Model (DOM) in memory and will only update the parts of a webpage that need to be updates and will leave the parts that don't need to be changed. This is in contrast to refreshing an entire page when something changes. With React, you can build complex interfaces using multiple components, connect to data on the back end and render the relevant information in HTML. 
-
-(Reactjs.org 2021a; Reactjs.org 2021b; W3schools.com 2022b)
-
-### The back end server layer - Express.js and Node.js 
-
-Express.js is a server-side framework that works on top of a Node.js server. Express.js allows developers easily write routes that can handle incoming HTTP requests and response accordingly. 
-
-describe these things and include mongoose
-
-### The database layer - MongoDB
-
-describe
+A MERN stack application is any application built using MongoDb, Express.js, React.js and Node.js. A MERN application comprises three layer or tiers, the front end, back end and a database and works well with JavaScript Object Notation (JSON) data. The use of MongoDB, Express.js, React.js and Node.js allows JSON data to move easily between the database layer and the front end and back again. The architecture for a MERN application is shown in the image and explained in more detail below (MongoDB, 2022).
 
 
 ![MERN architecture](https://webimages.mongodb.com/_com_assets/cms/mern-stack-b9q1kbudz0.png?auto=format%2Ccompress)
 
-
-
-
-
 (MongoDB, 2022)
+
+
+### The front end - React.js
+
+React.js is a front end framework built using JavaScript and represents the top tier of the application. React allows developers to build a front end interface with reusable components, making development fast and efficient. Moreover, React creates a virtual Document Object Model (DOM) in memory and only alters the parts of a webpage that need to be updated and leaves the rest unchanged. This is in contrast to refreshing an entire page when something changes. With React, you can build complex, interactive interfaces using multiple components, create frontend routes, connect to data via the back layer and render the relevant JSON data in HTML (Reactjs.org 2021a; Reactjs.org 2021b; W3schools.com 2022b).
+
+### The back end server layer - Express.js and Node.js 
+
+Express.js is a server-side framework that works on top of a Node.js server. Express.js allows developers to easily write back end routes that use JavaScript functions to handle incoming HTTP requests and respond accordingly. Express.js connects a React front end, handles the back end routing and connects to a back end MongoDB database using a driver like Mongoosejs. The Mongoosejs driver helps facilitate the movement of JavaScript object/JSON document data between the front end and the MongoDB database with schemas and models.(MongoDB 2022; Mongoosejs.com 2022)
+
+### The database layer - MongoDB
+
+MongoDB is a NoSQL database that stores data in a JSON document structure, which closely resemble JavaScript objects. JSON document/JavaScript object data created in the React front end can be sent to the Express.js/Node.js backend where it's processed and inserted into the MongoDB database. Likewise, JSON data can be queried and rendered and then rendered on the React front end (MongoDB, 2022).       
+
 
 
 <hr>
@@ -152,6 +146,22 @@ describe
 
 *A team is about to engage in a project, developing a website for a small business. What knowledge and skills would they need in order to develop the project?*
 
+The project team members would require a combination of technical (hard) skills and interpersonal (soft) skills. These are discussed in more detail below:
+
+### Technical skills
+
+- Front end technologies including HTML5, CSS, JavaScript and additional libraries like React.js, JQuery and SASS. 
+- Knowledge of at least one server side language like Python, Ruby or JavaScript (if using Node.js).
+- Knowledge and skills relating several of database management systems like MongoDB or PostgreSQL. The ability to query data is also a must. For example using SQL.
+- Design skills  
+
+
+
+
+
+
+
+(Guru99, 2020a)
 
 <hr>
 
