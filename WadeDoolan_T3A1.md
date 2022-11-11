@@ -201,7 +201,7 @@ Control flow is the order in which code is executed by a computer. Without certa
 
 Moreover, in JavaScript, block statements (code inside curly brackets ```{ code goes here }```) are used with the control flow statements to encapsulate the code that is executed based on the requirements of the conditional, loop or function. In addition to conditional, loop and function structures, JavaScript also includes structures that alter the control flow based on the detection of an error. The try...catch...finally statement is used to change the order in which code is read based on the detection of an error. This type of statement is typically used in combination with conditionals and functions (Mozilla.org, 2022c).
 
-In JavaScript, function hoisting is another important concept to address when discussing control flow. When a function is declared in JavaScript, it is always read first and loaded into memory before any other code is executed. This means a function can be declared after it is called. Essentially, the control flow is altered to ensure a function is available to be called regardless of where it is declared in a script (JavaScript Tutorial, 2022).
+In JavaScript, function hoisting is another important concept to address when discussing control flow. When a function is declared in JavaScript, it is always read first and loaded into memory before any other code is executed. This means a function can be declared after it is called. Essentially, the control flow is altered to ensure a function is available to be called regardless of where it is declared in a script (JavaScript Tutorial, 2022b).
 
 ### Example - conditionals 
 
@@ -796,6 +796,51 @@ Therefore, to be able to manipulate JSON in JavaScript the JSON information must
 *For the code snippet provided below, write comments for each line of code to explain its functionality. In your comments you must demonstrates your ability to recognise and identify functions, ranges and classes* 
 
 
+```js
+
+
+class Car { // This is a class declaration for a Car class. This syntax was introduced in ES6
+    constructor(brand) {  //This constructor method is called during object instantiation and will initialise the object properties. In this case it accepts one argument, the brand of the car.   
+      this.carname = brand; //this line of code takes the brand of the car passed during object instantiation and assigns the value to the property "carname".
+    }
+    present() { //present() is a method of the Car class. it is available to any object instantiated using the Car class.
+      return 'I have a ' + this.carname; //when the present() method is called it will return a string "I have a <carname>", where the carname is the brand of the car used to instantiate the object
+    }
+  }
+  
+  class Model extends Car { //this is a class declaration for a Model class that is a subclass of the Car class. The extends keyword is used to create the Model class that represents a child of the Car class.
+    constructor(brand, mod) { //This constructor method is called during object instantiation. Again it initialises the object properties. In this case it accepts one argument, the brand of the car. 
+      super(brand); //the super method calls the constructor of the Car class to access the carname property and assign the brand name passed as an argument through the Model constructor method.
+      this.model = mod; //this takes the model of the car passed during object instantiation from the Model subclass and assigns the value to the property "model".
+    }
+    show() { // show() is a method of the Model subclass. it is available to any object instantiated using the Car class.
+      return this.present() + ', it was made in ' + this.model; //the show() method accesses the present() method inherited from the parent Car class, which returns the string "I have a <carname>". This is then concatenated with the string "it was made in <model>" and returns the full string. 
+    }
+  }
+  
+  let makes = ["Ford", "Holden", "Toyota"] //This is an array literal where the array of values "Ford", "Holden" and "Toyota" is assigned to the variable makes. 
+  let models = Array.from(new Array(40), (x,i) => i + 1980) //in this line an array is created and assigned to the variable models.The array is created using the Array.from() method, which takes two arguments in this case. 
+  
+  function randomIntFromInterval(min,max) { // min and max included
+      return Math.floor(Math.random()*(max-min+1)+min);
+  }
+  
+  for (model of models) {
+  
+    make = makes[randomIntFromInterval(0,makes.length-1)]
+    model = models[randomIntFromInterval(0,makes.length-1)]
+  
+    mycar = new Model(make, model);
+    console.log(mycar.show())
+  }
+
+
+// (Eagles, 2020)
+// (JavaScript Tutorial, 2022a)
+
+
+
+```
 
 
 <hr>
