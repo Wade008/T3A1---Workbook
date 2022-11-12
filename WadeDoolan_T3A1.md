@@ -181,6 +181,22 @@ Some important soft skills include:
 
 *With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges*  
 
+**Project:** Portfolio(T1A2)
+
+This project involved developing a personal portfolio website to showcase my work experience, skills and abilities. This required a combination of coding, design, planning and presentation skills to complete the project. Some important personal traits (soft skills) were also required. These are discussed in more detail below.
+
+### Planning and design skills  
+
+Before the project could be coded it was important to be able to plan how the site would function and look. This involved researching other portfolio site. In short, it required research skills to gather ideas before any planning could take place. Following this, the project needed to be planned. Important skills like wire-framing and mobile first design were applied to plan how the site would look and function. Furthermore, this required knowledge of how sites behave and appear on different screen sizes, in order to make the website full responsive. Ultimately, the ability to research any problem before and during my portfolio development was essential.   
+
+### Programming knowledge and skills
+
+Once the design process was completed specific knowledge and skills relating to HTML, CSS styling, CSS preprocessors, reusable HTML components and mixins were needed to build the website. Furthermore, it was important to understand flex and how this can be applied to improve site responsiveness. Media queries were also needed to make the site fully responsive. Moreover, knowledge of semantic HTML elements was essential to be able to make the code and website as readable and accessible and possible. Knowledge of sites like W3C markup validation service was helpfully in assessing how appropriate/valid my portfolio site was in terms of HTML semantic tags and CSS (W3.org, 2022).
+
+### Soft skills
+
+
+
 
 
 
