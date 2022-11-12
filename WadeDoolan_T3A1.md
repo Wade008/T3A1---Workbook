@@ -263,7 +263,7 @@ Notably, JavaScript is a weakly typed language, meaning the data type of a varia
 
 1. String coercion  
 
-As shown in the example above, a number is typically coerced into string when a number and string are added together. This also happens when a boolean and a string are added together (GeeksforGeeks, 2020).
+As shown in the example above, a number is typically coerced into string when a number and string are added together. This also happens when a boolean and a string are added together (GeeksforGeeks, 2020b).
 
  **JavaScript example: coercion to string type**
 
@@ -282,7 +282,7 @@ console.log(total)
 
 2. Number coercion
 
-Where possible, JavaScript will coerce a string to a number when operations like subtraction, multiplication, division and modulus are used between a number and string or two strings. If a string cannot be logically coerced into a number ```NaN``` is the result of the operation (GeeksforGeeks, 2020).
+Where possible, JavaScript will coerce a string to a number when operations like subtraction, multiplication, division and modulus are used between a number and string or two strings. If a string cannot be logically coerced into a number ```NaN``` is the result of the operation (GeeksforGeeks, 2020b).
 
 **JavaScript example: coercion to number type**
 
@@ -298,7 +298,7 @@ console.log(result)
 // Will output 5 as a number
 
 ```
-JavaScript will also coerce Boolean values to numbers where appropriate. Since true can be represented a 1 and false as 0, it is logical for JavaScript to convert Boolean values to numeric values (GeeksforGeeks, 2020). The example below shows how this can happen.
+JavaScript will also coerce Boolean values to numbers where appropriate. Since true can be represented a 1 and false as 0, it is logical for JavaScript to convert Boolean values to numeric values (GeeksforGeeks, 2020b). The example below shows how this can happen.
 
 **JavaScript example: coercion to number type**
 
@@ -320,7 +320,7 @@ console.log(result)
 
 3. The equality operator
 
-When the non-strict equality operator ``` ( == ) ``` is used in JavaScript, non-number values will be coerced into numbers, where appropriate  However, coercion will not occur when the strict equality operator ```( === ) ``` is used (GeeksforGeeks, 2020). The example below shows how a string "12" is coerced into a number when it is compared to the number 12 using the non-strict equality operator.
+When the non-strict equality operator ``` ( == ) ``` is used in JavaScript, non-number values will be coerced into numbers, where appropriate  However, coercion will not occur when the strict equality operator ```( === ) ``` is used (GeeksforGeeks, 2020b). The example below shows how a string "12" is coerced into a number when it is compared to the number 12 using the non-strict equality operator.
 
 **JavaScript example: equality operator**
 
@@ -728,8 +728,6 @@ JavaScript also allow bespoke methods to be added to objects. See the example be
 
 ```js
 
-
-
 const customer1 = {
     firstname: "Kelly",
     lastname: "Clarkson",
@@ -775,19 +773,92 @@ JSON (JavaScript Object Notation) is a popular way to format data. A JSON object
 ```
 (Koishigawa, 2021)
 
-Therefore, to be able to manipulate JSON in JavaScript the JSON information must first be parsed/changed into something that JavaScript can understand.  
+Therefore, to be able to manipulate JSON in JavaScript the JSON information must first be parsed/changed into something that JavaScript can understand. This can be done using the ```fetch``` method. The ```fetch``` method can be used to GET data from a source (API) and post data to an API endpoint. 
 
+**Example: using fetch to GET JSON data**
 
+The code below shows how fetch is used in a browser to access JSON data from an external source and convert the data into a JavaScript object. Once JSON data has been parsed to a JavaScript object it can be manipulated like any other JavaScript object.
 
+```html
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12 | JSON GET example </title>
+</head>
 
+<body>
 
+    <script>
+        // Access an api that returns JSON data. The fetch method acts as a GET request when only the api url is passed.
+        let response = fetch("https://jsonplaceholder.typicode.com/posts/1");
 
-(Koishigawa, 2021)
-(Geshan Manandhar, 2021)
-(Nodejs.org, 2022)
-(Irfan, 2022)
-(Open-meteo.com, 2022)
+        //the fetch method returns a promise object, which uses the .then method to access the data. 
+
+        // The res.json() method is called to parse the JSON data into a JavaScript object literal. In this case an array of objects is returned. The next .then logs the first object to the browser console.
+        response.then(res =>
+            res.json().then(data => { console.log(data) }))
+    </script>
+
+</body>
+
+</html>
+```
+(GeeksforGeeks 2020a; Typicode.com 2022)
+
+The results of the GET request above are shown in the image below.
+
+![JSON GET](./consoleLogGET.png)
+
+**Example: using fetch to POST JSON data**
+
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 12 | JSON POST example</title>
+</head>
+<body>
+
+    <script>
+        // create new information to post to existing JSON data
+        let newData = {
+            title: "New title",
+            body: "New data",
+            userId: 8
+        }
+
+        // set the options for the fetch method.
+        let fetchOptions = {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(newData) //the JSON.stringify method converts the JavaScript object literal into a JSON string.
+        }
+
+        //post new info to the existing JSON data and then log the post into the console.
+        let response = fetch("https://jsonplaceholder.typicode.com/posts", fetchOptions)
+        .then((res) => res.json())
+        .then((data) => console.log(data))
+
+    </script>
+    
+</body>
+</html>
+```
+(GeeksforGeeks 2020a; Typicode.com 2022)
+
+The results of the POST request above are shown in the image below.
+
+![JSON POST](./consoleLogPOST.png)
 
 <hr>
 
