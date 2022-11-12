@@ -804,12 +804,12 @@ class Car { // This is a class declaration for a Car class. This syntax was intr
       this.carname = brand; //this line of code takes the brand of the car passed during object instantiation and assigns the value to the property "carname".
     }
     present() { //present() is a method of the Car class. it is available to any object instantiated using the Car class.
-      return 'I have a ' + this.carname; //when the present() method is called it will return a string "I have a <carname>", where the carname is the brand of the car used to instantiate the object
+      return 'I have a ' + this.carname; //when the present() method is called it will return a string "I have a <carname>", where the carname is the brand of the car used to instantiate the object. This is made available to any object instantiated using the Car class.
     }
   }
   
-  class Model extends Car { //this is a class declaration for a Model class that is a subclass of the Car class. The extends keyword is used to create the Model class that represents a child of the Car class.
-    constructor(brand, mod) { //This constructor method is called during object instantiation. Again it initialises the object properties. In this case it accepts one argument, the brand of the car. 
+  class Model extends Car { //this is a class declaration for a Model class that is a subclass of the Car class. The extends keyword is used to create the Model class that represents a child of the Car class and allows the Model class to inherit from the parent (Car) class.
+    constructor(brand, mod) { //This constructor method is called during object instantiation. Again it initialises the object properties. In this case it accepts two argument, the brand of the car and the car model. 
       super(brand); //the super method calls the constructor of the Car class to access the carname property and assign the brand name passed as an argument through the Model constructor method.
       this.model = mod; //this takes the model of the car passed during object instantiation from the Model subclass and assigns the value to the property "model".
     }
@@ -819,29 +819,26 @@ class Car { // This is a class declaration for a Car class. This syntax was intr
   }
   
   let makes = ["Ford", "Holden", "Toyota"] //This is an array literal where the array of values "Ford", "Holden" and "Toyota" is assigned to the variable makes. 
-  let models = Array.from(new Array(40), (x,i) => i + 1980) //in this line an array is created and assigned to the variable models.The array is created using the Array.from() method, which takes two arguments in this case. 
+  let models = Array.from(new Array(40), (x,i) => i + 1980) //In this line an array of numbers between 1980 and 2019 is created and assigned to the variable models.The array is created using the Array.from() method, which takes two arguments, in this case. The first argument (new Array(40)) creates an array with 40 undefinded elements. The second argument is an anonymous callback function that maps over the 40 elements created in the first argument and populates the array with numbers starting at 1980 for element[0] to 2019 for element[39]. The callback function works by accepting two argument (x,i) where x is the element and i is the index of the element value. It returns a value for each element x, which is the the index value + the number 1980. 
   
+  //this function is used by the code below. It accepts two arguments (min,max) and returns a randomly generated number between the min and max values, inclusive.  
   function randomIntFromInterval(min,max) { // min and max included
-      return Math.floor(Math.random()*(max-min+1)+min);
+      return Math.floor(Math.random()*(max-min+1)+min); //The inner function Math.randon() generates a random number between 0 and 0.99999. This is then multiplied by (max-min+1)+min, which will retrun a decimal number except when the Math.random() generates zero; in that case the min value is returned as a full integer. Any other number generated results in a decimal value, which is then "floored" thanks to the Math.floor() function wrapped around the inner code. Ultimately, the function returns an integer between the min and max values passed to the function, inclusive. 
   }
   
-  for (model of models) {
+
+  for (model of models) { //this is the beginning of a for loop that will loop through all 40 elements in the models array generated above. Essentially, the for loop will iterate 40 times.
   
-    make = makes[randomIntFromInterval(0,makes.length-1)]
-    model = models[randomIntFromInterval(0,makes.length-1)]
+    make = makes[randomIntFromInterval(0,makes.length-1)] //This line of code calls the randomIntFromInterval function above and passes the min value of zero and the max value of 2, the length of the makes array above minus 1. The randomIntFromInterval function will return a randomly generated number between 0 and 2, which is used to access the element at the index position of the random number in the makes array above. This value is then assigned to the variable make. This occurs for each iteration of the for loop (40 times).
+    model = models[randomIntFromInterval(0,makes.length-1)] //This line of code calls the randomIntFromInterval function above and passes the min value of zero and the max value of 2, the length of the makes array above minus 1. The randomIntFromInterval function will return a randomly generated number between 0 and 2, which is used to access the element at the index position of the random number in the models array above. This value is then assigned to the variable model. This occurs for each iteration of the for loop (40 times).
   
-    mycar = new Model(make, model);
-    console.log(mycar.show())
+    mycar = new Model(make, model); //This line of code instantiates a new object from the Model class and assigns it to the variable mycar. It passess the make and the model from the code above to the constructor method of the Model class. This occurs 40 times, each iteration of the for loop. That is, 40 objects are created using the Model class, which inherits certain information from the parent Car class.
+
+    console.log(mycar.show()) //This line of code uses the show() method available to the mycar object when it was instantiated above. This is then logged to the console. Ultimately, the for loop will console.log the output 40 times, with a combination of "I have a (Ford or Toyota or Holden), it was made in (1980 or 1981 or 1982)". The output will depend on the randonly generated numbers obtained from the randomIntFromInterval function above. 
   }
-
-
-// (Eagles, 2020)
-// (JavaScript Tutorial, 2022a)
-
-
 
 ```
-
+(Eagles 2020; GeeksforGeeks 2018; JavaScript Tutorial 2022a)
 
 <hr>
 
