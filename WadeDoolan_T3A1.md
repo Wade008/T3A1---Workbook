@@ -72,7 +72,7 @@ Quality software can be broadly defined as the extent to which the system meets 
 1. Functional suitability: is an important quality characteristic that represents how well a software product meets the explicit and implicit needs of its users. This quality characteristic has three sub-attributes:
     - *Functional completeness*, which relates to the degree to which the system provides all the functions stipulated by the users.
     - *Functional correctness*, pertains to the ability of the system to produce the correct results with the right amount of precision.
-    - *Functional Appropriateness*, is the capacity of the software only run the functions necessary to achieve the tasks required by the users.   
+    - *Functional Appropriateness*, is the capacity of the software only runs the functions necessary to achieve the tasks required by the users.   
 
     This attribute can be demonstrated through a low rate of defects, no missing functionality and how fast the end-users' problems can be solved. It is often tested using integration, regression acceptance and UI automation testing.
 
@@ -89,28 +89,21 @@ Quality software can be broadly defined as the extent to which the system meets 
 
 
 
-3. Compatibility: generally refers to how well a product works with other related products when sharing the same hardware or software environments. This includes two sub-attributes, co-existence and interoperability. Co-existence pertains to how well a product performs while not negatively affecting the other product. Interoperability involves how well two or more products exchange and use the shared information. An example of compatibility is how well a web app works across different browsers and operating systems (Iso25000.com 2022; Software Testing Help 2022)
+3. Compatibility: generally refers to how well a product works with other related products when sharing the same hardware or software environments. This includes two sub-attributes, co-existence and interoperability. Co-existence pertains to how well a product performs while not negatively affecting the other product. Interoperability involves how well two or more products exchange and use the shared information. An example of compatibility is how well a web app works across different browsers and operating systems (Iso25000.com 2022; Software Testing Help 2022).
 
-Example: 
+4. Usability: is the extent to which a product can be used by the target audience. This particular quality requirement comprises several key characteristics including a users ability to recognise how appropriate the product is for them, how easy it is to learn to use the product, how easy it is to operate the product, if the product protects the user from making errors, how intuitive the interface is and accessibility for all users. Usability testing typically involves a small set of end-users. This attribute is demonstrated as usable software that is aesthetically pleasing. It is also easy to use for people with special needs and has effective error protection (Iso25000.com 2022; Guru99 2020b; Tuskr.app 2022).
 
-4. Usability: is the extent to which a product can be used by the target audience. This particular quality requirement comprises several key characteristics including a users ability to recognise how appropriate the product is for them, how easy it is to learn to use the product, how easy it is to operate the product, if the product protects the user from making errors, how intuitive the interface is and accessibility for all users. Usability testing typically involves a small set of end-users (Iso25000.com 2022; Guru99 2020b).
+5. Reliability: involves determining how well a product performs its functions under certain conditions for a set period of time. This quality involves assessing how reliable a product is under normal conditions, how available the product is when it is required for use, if the product can still function when a software or hardware fault occurs and if the product can be recovered successfully after system failure. Notably, reliable software will continue to work well for long periods of time and will often recover quickly from crashes (Iso25000.com, 2022; Tuskr.app 2022). 
 
-Example: 
+6. Security: is perhaps one of the most important quality characteristics of a product. It refers to the extent to which a product ensures appropriate authorised access, code integrity, logging, entity identification and user authentication. Software with effective security can withstand cyberattacks, will only allow an authentic user to access the correct level of information and provides a high degree confidentiality for users (Iso25000.com, 2022; Tuskr.app 2022).  
 
-5. Reliability: involves determining how well a product performs its functions under certain conditions for set period of time. This quality involves assessing how reliable a product is under normal conditions, how available the product is when it is when required for use, if the product can still function when a software or hardware fault occurs and if the product can be recovered successfully after system failure (Iso25000.com, 2022). 
-
-Example: 
-
-6. Security: is perhaps one of the most important quality characteristics of a product. It refers to the extent to which a product ensures appropriate authorised access, code integrity, logging, entity identification and user authentication (Iso25000.com, 2022).  
-
-Example: 
 
 7. Maintainability: relates to the continuous improvement and adaptability of a product. This quality has several sub-characteristics including the extent of modularity that allows component change without drastically impacting other components, reusability of product components across multiple systems, the ability to analyse the effects of change on a product, how easily a product can be modified with causing defects and how easily a product can be tested to ensure it is fit for purpose (Iso25000.com, 2022).     
 
 8. Portability: is the extent to which a product can be transferred from one hardware or software environment to another. This quality comprises: 
     - adaptability or the extent to which a product can adapt to changing hardware and software environments like changes to operating systems or browsers.  
     - How easy it is to install/remove a product from certain environment, such as a Windows operating system.
-    - The degree to which can replace another product in the same environment and still perform the same tasks.
+    - The degree to which the product can replace another product in the same environment and still perform the same tasks.
 
 
 
@@ -154,7 +147,7 @@ Technical skills and knowledge:
 
 - Front end technologies including HTML5, CSS, JavaScript and additional libraries like React.js, JQuery and CSS preprocessors. 
 - Knowledge of at least one server side language like Python, Ruby or JavaScript (if using Node.js).
-- Knowledge and skills relating several of database management systems like MongoDB or PostgreSQL. The ability to query data is also a must. For example using SQL.
+- Knowledge and skills relating several database management systems like MongoDB or PostgreSQL. The ability to query data is also a must. For example using SQL.
 - Design skills relating to user interface / user experience (UI/UX) is essential.
 - Some knowledge around severs such as Apache and Linus to handle server administration is helpful.
 - Version control skills relating to Git and GitHub (or similar) is very important.
@@ -193,7 +186,7 @@ Before the project could be coded it was important to be able to plan how the si
 
 ### Programming knowledge and skills
 
-Once the design process was completed specific knowledge and skills relating to HTML, CSS styling, CSS preprocessors (SASS), reusable HTML components and mixins were needed to build the website. Furthermore, it was important to understand flex and how this can be applied to improve site responsiveness. Media queries were also needed to make the site fully responsive. Moreover, knowledge of semantic HTML elements was essential to be able to make the code and website as readable and accessible and possible. Knowledge of sites like W3C markup validation service was helpfully in assessing how appropriate/valid my portfolio site was in terms of HTML semantic tags and CSS (W3.org, 2022). Skills relating to image access and manipulation, were important, with knowledge and skills relating to HTML attributes essential to make the website work and accessible for screen readers (for visually impaired users).
+Once the design process was completed, specific knowledge and skills relating to HTML, CSS styling, CSS preprocessors (SASS), reusable HTML components and mixins were needed to build the website. Furthermore, it was important to understand flex and how this can be applied to improve site responsiveness. Media queries were also needed to make the site fully responsive. Moreover, knowledge of semantic HTML elements was essential to be able to make the code and website as readable and accessible and possible. Knowledge of sites like W3C markup validation service was helpfully in assessing how appropriate/valid my portfolio site was in terms of HTML semantic tags and CSS (W3.org, 2022). Skills relating to image access and manipulation, were important, with knowledge and skills relating to HTML attributes essential to make the website work and accessible for screen readers (for visually impaired users).
 
 ### Soft skills
 
@@ -940,9 +933,88 @@ class Car { // This is a class declaration for a Car class. This syntax was intr
 
 <hr>
 
-
-
 ## References  
 
+Atlassian (2022a). Git Feature Branch Workflow | Atlassian Git Tutorial. [online] Atlassian. Available at: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow [Accessed 7 Nov. 2022].
+
+Atlassian (2022b). Git Workflow | Atlassian Git Tutorial. [online] Atlassian. Available at: https://www.atlassian.com/git/tutorials/comparing-workflows [Accessed 7 Nov. 2022].
+
+Bhalla, S. (2022). Type Coercion in JavaScript - JavaScript in Plain English. [online] Medium. Available at: https://javascript.plainenglish.io/type-coercion-in-javascript-ef5e390d2318 [Accessed 21 Oct. 2022].
+
+Bolaji Ayodeji (2019). How to Manipulate Arrays in JavaScript. [online] freeCodeCamp.org. Available at: https://www.freecodecamp.org/news/manipulating-arrays-in-javascript/ [Accessed 28 Oct. 2022].
+
+Demasi, D. (2022). How to Use Git and GitHub in a Team like a Pro – Featuring Harry and Hermione. [online] freeCodeCamp.org. Available at: https://www.freecodecamp.org/news/how-to-use-git-and-github-in-a-team-like-a-pro/ [Accessed 7 Nov. 2022].
+
+Eagles, L. (2020). An Easy Guide To Understanding Classes In JavaScript. [online] DEV Community. Available at: https://dev.to/lawrence_eagles/an-easy-guide-to-understanding-classes-in-javascript-3bcm [Accessed 11 Nov. 2022].
+
+GeeksforGeeks. (2018). JavaScript Array from() Method - GeeksforGeeks. [online] Available at: https://www.geeksforgeeks.org/javascript-array-from-method-2/ [Accessed 12 Nov. 2022].
+
+GeeksforGeeks. (2020a). JavaScript | fetch() Method - GeeksforGeeks. [online] Available at: https://www.geeksforgeeks.org/javascript-fetch-method/ [Accessed 12 Nov. 2022].
+
+GeeksforGeeks. (2020b). What is Type Coercion in JavaScript ? - GeeksforGeeks. [online] Available at: https://www.geeksforgeeks.org/what-is-type-coercion-in-javascript/ [Accessed 21 Oct. 2022].
+
+GitHub Docs. (2022a). GitHub flow - GitHub Docs. [online] Available at: https://docs.github.com/en/get-started/quickstart/github-flow [Accessed 7 Nov. 2022].
+
+GitHub Docs. (2022b). Inviting collaborators to a personal repository - GitHub Docs. [online] Available at: https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository [Accessed 7 Nov. 2022].
+
+Guru99. (2020a). What is Full Stack Developer? Key Skills Required Java, Python. [online] Available at: https://www.guru99.com/full-stack-developer.html [Accessed 10 Nov. 2022].
+
+Guru99. (2020b). What is Usability Testing? Software UX. [online] Available at: https://www.guru99.com/usability-testing-tutorial.html [Accessed 6 Nov. 2022].
+
+Indeed Career Guide. (2022). 11 Important Soft Skills for Software Developers. [online] Available at: https://www.indeed.com/career-advice/career-development/software-developer-soft-skills [Accessed 10 Nov. 2022].
+
+Iso25000.com. (2022). ISO 25010. [online] Available at: https://iso25000.com/index.php/en/iso-25000-standards/iso-25010 [Accessed 17 Oct. 2022].
+
+JavaScript Tutorial. (2022a). JavaScript Class Fundamentals: Introduction to ES6 Class. [online] Available at: https://www.javascripttutorial.net/es6/javascript-class/ [Accessed 11 Nov. 2022].
+
+JavaScript Tutorial. (2022b). JavaScript Hoisting Explained By Examples. [online] Available at: https://www.javascripttutorial.net/javascript-hoisting/ [Accessed 21 Oct. 2022].
+
+Kaur, A., Grover, P.S. and Dixit, A. (2018). Performance Efficiency Assessment for Software Systems. Advances in Intelligent Systems and Computing, [online] pp.83–92. doi:10.1007/978-981-10-8848-3_8.
+
+Koishigawa, K. (2021). JSON Stringify Example – How to Parse a JSON Object with JS. [online] freeCodeCamp.org. Available at: https://www.freecodecamp.org/news/json-stringify-example-how-to-parse-a-json-object-with-javascript/ [Accessed 30 Oct. 2022].
+
+Md. Abu Talha (2018). JavaScript Object Manipulation - InfancyIT - Medium. [online] Medium. Available at: https://medium.com/infancyit/javascript-object-manipulation-5d1145cf06ef [Accessed 29 Oct. 2022].
+
+MongoDB. (2022). What Is The MERN Stack? Introduction & Examples. [online] Available at: https://www.mongodb.com/mern-stack [Accessed 8 Nov. 2022].
+
+Mongoosejs.com. (2022). Mongoose v6.7.2: Getting Started. [online] Available at: https://mongoosejs.com/docs/ [Accessed 10 Nov. 2022].
+
+Mozilla.org. (2022a). Conditional - MDN Web Docs Glossary: Definitions of Web-related terms | MDN. [online] Available at: https://developer.mozilla.org/en-US/docs/Glossary/Conditional [Accessed 20 Oct. 2022].
+
+Mozilla.org. (2022b). Control flow - MDN Web Docs Glossary: Definitions of Web-related terms | MDN. [online] Available at: https://developer.mozilla.org/en-US/docs/Glossary/Control_flow#:~:text=The%20control%20flow%20is%20the,such%20as%20conditionals%20and%20loops. [Accessed 20 Oct. 2022].
+
+Mozilla.org. (2022c). Control flow and error handling - JavaScript | MDN. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling [Accessed 21 Oct. 2022].
+
+Mozilla.org. (2022d). JavaScript data types and data structures - JavaScript | MDN. [online] Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures [Accessed 24 Oct. 2022].
+
+Mozilla.org. (2022e). Making decisions in your code — conditionals - Learn web development | MDN. [online] Available at: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/conditionals#switch_statements [Accessed 20 Oct. 2022].
+
+Mozilla.org. (2022f). Type coercion - MDN Web Docs Glossary: Definitions of Web-related terms | MDN. [online] Available at: https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion#:~:text=Type%20coercion%20is%20the%20automatic,such%20as%20strings%20to%20numbers). [Accessed 21 Oct. 2022].
+
+Programiz.com. (2022). JavaScript Data Types (with Examples). [online] Available at: https://www.programiz.com/javascript/data-types [Accessed 24 Oct. 2022].
+
+Reactjs.org. (2021a). Getting Started – React. [online] Available at: https://reactjs.org/docs/getting-started.html [Accessed 8 Nov. 2022].
+
+Reactjs.org. (2021b). React – A JavaScript library for building user interfaces. [online] Available at: https://reactjs.org/ [Accessed 9 Nov. 2022].
+
+Software Testing Help. (2022). What is Software Compatibility Testing? [online] Available at: https://www.softwaretestinghelp.com/software-compatibility-testing/ [Accessed 6 Nov. 2022].
+
+Super User (2022). Functional Suitability Evaluation. [online] AQCLab. Available at: https://www.aqclab.es/index.php/en/software-quality-evaluation-certification-iso-25000/functional-suitability-evaluation-certification-iso-25000 [Accessed 17 Oct. 2022].
+
+Tuskr.app. (2022). Software Quality Dimensions — Learn with examples. [online] Available at: https://tuskr.app/learn/software-quality-dimensions [Accessed 13 Nov. 2022].
+
+Typicode.com. (2022). JSONPlaceholder - Guide. [online] Available at: https://jsonplaceholder.typicode.com/guide/ [Accessed 12 Nov. 2022].
+
+W3.org. (2022). The W3C Markup Validation Service. [online] Available at: https://validator.w3.org/#validate_by_input [Accessed 12 Nov. 2022].
+
+W3schools.com. (2015a). JavaScript Arrays. [online] Available at: https://www.w3schools.com/js/js_arrays.asp [Accessed 28 Oct. 2022].
+
+W3schools.com. (2015b). JavaScript Data Types. [online] Available at: https://www.w3schools.com/js/js_datatypes.asp [Accessed 24 Oct. 2022].
+
+W3schools.com. (2015c). JavaScript Objects. [online] Available at: https://www.w3schools.com/js/js_objects.asp [Accessed 29 Oct. 2022].
+
+W3schools.com. (2022a). How To Remove a Property from a JavaScript Object. [online] Available at: https://www.w3schools.com/howto/howto_js_remove_property_object.asp [Accessed 29 Oct. 2022].
+
+W3schools.com. (2022b). Introduction to React. [online] Available at: https://www.w3schools.com/react/react_intro.asp [Accessed 9 Nov. 2022].
 
 
