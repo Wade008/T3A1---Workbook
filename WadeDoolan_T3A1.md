@@ -132,7 +132,7 @@ React.js is a front end framework built using JavaScript and represents the top 
 
 ### The back end server layer - Express.js and Node.js 
 
-Express.js is a server-side framework that works on top of a Node.js server. Express.js allows developers to easily write back end routes that use JavaScript functions to handle incoming HTTP requests and respond accordingly. Express.js connects a React front end, handles the back end routing and connects to a back end MongoDB database using a driver like Mongoosejs. The Mongoosejs driver helps facilitate the movement of JavaScript object/JSON document data between the front end and the MongoDB database with schemas and models.(MongoDB 2022; Mongoosejs.com 2022)
+Express.js is a server-side framework that works on top of a Node.js server. Express.js allows developers to easily write back end routes that use JavaScript functions to handle incoming HTTP requests and respond accordingly. Express.js connects a React front end, handles the back end routing and connects to a back end MongoDB database using an object data modeller (ODM) like Mongoosejs. The Mongoosejs ODM helps facilitate the movement of JavaScript object/JSON document data between the front end and the MongoDB database with schemas and models (MongoDB 2022; Mongoosejs.com 2022).
 
 ### The database layer - MongoDB
 
@@ -181,7 +181,7 @@ Some important soft skills include:
 
 *With reference to one of your own projects, discuss what knowledge or skills were required to complete your project, and to overcome challenges*  
 
-**Project:** Portfolio(T1A2)
+**Project:** Portfolio (T1A2)
 
 This project involved developing a personal portfolio website to showcase my work experience, skills and abilities. This required a combination of coding, design, planning and presentation skills to complete the project. Some important personal traits (soft skills) were also required. These are discussed in more detail below.
 
@@ -204,6 +204,17 @@ This project required soft skills such as a keenness to solve problems, patience
 
 *With reference to one of your own projects, evaluate how effective your knowledge and skills were for this project, and suggest changes or improvements for future projects of a similar nature*  
 
+**Project:** API Webserver Project (T2A2)
+
+This project involved planning and building a fully functional back end recipe web API server, with functionality that allowed the ability to create, read, update and delete recipe data in a relational database. For this project I was required to develop a software development plan and design a relational database using an entity relationship diagram (ERD). Moreover, I was required to develop the web API server using the python programming language and the PostgreSQL Relational Database Management System along with additional libraries and frameworks like Flask and SQLAlchemy. The effectiveness of my knowledge and skills in relation to the project are discussed further below.
+
+In general, my knowledge and skills were mostly effective in relation to designing and creating a fully functional web API server; however, I could improve in several areas for similar projects in the future. For example:
+
+- Software development plan: I used Trello to plan and track and the implementation of the project. I had already used Trello for previous projects, so I had knowledge and skills in planning software projects. However, for future projects I could use the Trello cards more effectively by using more cards to detail the plan in more specific detail.  
+
+- Design a relational database: I was able to design a mostly normalised relational database. I knew how to design the database using an ERD and I understood the concept of relationships between entities. I knew I needed to remove duplication from the design. However, I did not remove all cases of duplication on one of the linking tables and therefore, I need to ensure future relational database designs are fully normalised to ensure data duplication is removed from the system.      
+
+- Coding the API: Developing the recipe API required knowledge and skills pertaining to several python libraries as well as the Flask back end framework. It also required understanding the model view controller (MVC) design pattern. My knowledge and skills were effective enough to create a working API that could accept GET, POST, UPDATE and DELETE requests. Using my existing skills I was able to create schemas that validated and santised data inputs and well as shaping data for display. I was also able to create basic database models using the SQLAlchemy Object Relational Mapper library. And I could build queries in the controllers to interact with the database. However, for simalar projects in the future I will need to develop more knowledge around the model methods for queries to ensure the database functions as intended under all circumstances.          
 
 <hr>
 
